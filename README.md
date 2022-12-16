@@ -1,3 +1,25 @@
+# RBE539 Machine Learning Final Project - Just NeRF It!
+
+
+https://user-images.githubusercontent.com/115329091/208028117-7143b9cd-ff67-4413-831f-5cf0c3806701.mp4
+
+We trained a NeRF model to reconstruct our own 3D scenes using Instant NeRF developed by NVidia.
+First, we set up the enviornment using the guide privided by original Instant NeRF. You can find this by going through this readme file.
+To summarize the main component required to train our own NeRF network, we need the following softwares
+- CUDA
+- Ceres solver
+- COLMAP
+- Instant-NeRF
+
+After setting up the enviornemtn, you can replicate our pipeline with the following command to train and visualize our first dataset
+```sh
+instant-ngp$ ./build/testbed --scene data/nerf/bottle
+```
+Or the following to train and visualize the second dataset that demonstrate a bad data collection that doesn't cover the full scene
+```sh
+instant-ngp$ ./build/testbed --scene data/nerf/bottle_bad
+```
+
 # Instant Neural Graphics Primitives ![](https://github.com/NVlabs/instant-ngp/workflows/CI/badge.svg)
 
 <img src="docs/assets_readme/fox.gif" height="342"/> <img src="docs/assets_readme/robot5.gif" height="342"/>
