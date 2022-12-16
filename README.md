@@ -11,13 +11,18 @@ To summarize the main component required to train our own NeRF network, we need 
 - COLMAP
 - Instant-NeRF
 
-After setting up the enviornemtn, you can replicate our pipeline with the following command to train and visualize our first dataset
+After setting up the enviornemtn, you can train with our data with the following command to train and visualize our first dataset
 ```sh
-instant-ngp$ ./build/testbed --scene data/nerf/bottle
+CS549-Just-NERF-It$ ./build/testbed --scene data/nerf/bottle
 ```
 Or the following to train and visualize the second dataset that demonstrate a bad data collection that doesn't cover the full scene
 ```sh
-instant-ngp$ ./build/testbed --scene data/nerf/bottle_bad
+CS549-Just-NERF-It$ ./build/testbed --scene data/nerf/bottle_bad
+```
+
+If you want to regenerate the transforms associated with each image, use the following command
+```sh
+CS549-Just-NERF-It/data/nerf/bottle$ python [path-to-CS549-Just-NERF-It]/scripts/colmap2nerf.py --colmap_matcher exhaustive --run_colmap --aabb_scale 16
 ```
 
 # Instant Neural Graphics Primitives ![](https://github.com/NVlabs/instant-ngp/workflows/CI/badge.svg)
