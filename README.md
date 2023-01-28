@@ -1,4 +1,4 @@
-# RBE539 Machine Learning Final Project - Just NeRF It!
+# CS539 Machine Learning Final Project - Just NeRF It !!!
 
 
 https://user-images.githubusercontent.com/115329091/208028117-7143b9cd-ff67-4413-831f-5cf0c3806701.mp4
